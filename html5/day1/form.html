@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		
+		.send{
+           background: url(https://www.baidu.com/img/baidu_jgylogo3.gif) no-repeat center center;
+           width:100px;
+           height:50px;
+		}
+	</style>
+</head>
+<body>
+	<form method="post" action="1.php" target="_blank">
+		<label for="username">用户名</label>
+		<input type="text" name="username" autofocus id="username" readonly required autocomplete="off" placeholder="请输入您的用户名" value="1111">
+		<label>密码
+		   <input type="password" name="password"  autocomplete="off" placeholder="请输入您的密码" value="222">
+		</label>
+		<button type="submit" class="send">提交</button>
+		<button type="button">普通按扭</button>
+		<button type="reset">重置</button>
+		<input type="submit" value="提交" >
+		<input type="button" value="普通按扭">
+		<input type="reset" value="重置">
+<!-- 		<input type="search" value="" required>
+		<input type="number" step="2" min="1" max="10">
+        <input type="date">
+        <input type="month">
+        <input type="time">
+        <input type="week">
+        <input type="datetime">
+        <input type="datetime-local">
+        <input type="color"> -->
+        <input type="checkbox" name="love">看书
+        <input type="checkbox" name="love">学习
+        <input type="checkbox" name="love">游戏
+        <input type="checkbox" name="love">上网
+        <input type="checkbox" name="love">运动
+        <input type="checkbox" name="love">睡觉
+
+        <input type="radio" name="sex">男
+        <input type="radio" name="sex">女
+        <input type="radio" name="sex">未知
+
+
+        <!-- <input type="image" src="https://www.baidu.com/img/baidu_jgylogo3.gif"> -->
+
+        <input type="email" name="email" value="11@qq.com">
+        <input type="tel" name="tel">
+        <input type="url" name="url" value="http://localhost/0107/html5/day1/form.html">
+
+        <input type="hidden" value="2" name="hidden">
+
+        <!-- <input type="file" name="file"> -->
+
+        <select name="op" id="">
+        	<optgroup label="男">
+	        	<option value="1">男</option>
+        	</optgroup>
+        	<optgroup label="女">
+	        	<option value="0" selected>女</option>
+        	</optgroup>
+        </select>
+
+     <textarea name="" id="" cols="60" rows="1" placeholder="嵌入元素.html">fsffs</textarea>
+
+
+     <input type="text" placeholder="电话号码" required pattern="^[\d]{2,4}\-[\d]{6,8}$">
+	</form>
+</body>
+</html>
