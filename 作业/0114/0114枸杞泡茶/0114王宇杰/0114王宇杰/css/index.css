@@ -1,0 +1,106 @@
+body,ul,li{
+	padding: 0px;
+	margin: 0px;
+	min-width: 1200px;
+}
+
+body{
+	text-align:center
+}
+
+ul{
+	list-style: none;
+}
+
+
+a{	
+	width: 250px;
+	height: 26px;
+	text-decoration: none;
+	font-size: 14px;
+	cursor: default;
+}
+
+div{
+	font-family: 微软雅黑;
+	font-size: 13px;
+}
+
+.a_color{
+	color: #a1a192;
+}
+
+.a_color_two{
+	color: black;
+}
+
+
+.clear{
+	clear: both;
+}
+/*常用*/
+
+.box{
+	width: 245px;
+	height: 240px;
+	border: 1px solid #bababa;
+	padding-top: 4px;
+	box-shadow: 2px 2px 5px #bababa;
+	color: #a1a192;
+	margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.box2{
+	width: 200px;
+	height: 23px;
+	line-height: 23px;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.box2_two{
+	width: 200px;
+	height: 23px;
+	line-height: 23px;
+	padding-left: 24px;
+	padding-right: 24px;
+	color: black;
+}
+
+
+.span1{
+	display: block;
+	text-align: left;
+	float: left;
+}
+
+.span2{
+	display: block;
+	text-align: right;
+	margin-left: 10px;
+	float: right;
+}
+
+
+/*.left{
+	margin-left: 24px;
+	float: left;
+}
+
+.right{
+	margin-left: 50px;
+	float: left;
+}*/
+.box .box2_two:hover{
+	background-color: #ebebeb;
+	cursor: default;
+}
+
+.box .box2:hover{
+	cursor: default;
+}

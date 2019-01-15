@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		p{
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<p style="font-size: 30px;">
+		样式表层叠
+		样式表叠通过五种方式进行,如果样式相同,则会发生样式的冲突和替换
+		<ol>
+			<h1>权重从上往下,越下越高</h1>
+			<li>
+				浏览器样式
+			</li>
+			<li>
+				外部引入样式(link)
+			</li>
+			<li>
+				文档内嵌样式(style元素设置)
+			</li>
+			<li>
+				元素内嵌样式(使用style属性设置)
+			</li>
+			<li>
+				!important  权重最高
+			</li>
+		</ol>
+	</p>
+</body>
+</html>

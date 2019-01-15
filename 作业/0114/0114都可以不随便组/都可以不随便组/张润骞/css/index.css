@@ -1,0 +1,79 @@
+body,html,a,p,div,ul,li,h1,h2,h3,h4,h5,h6,img{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background-color:#fff;
+	font: 12px 微软雅黑;
+}
+ul{
+	list-style: none;
+}
+
+.content{
+	width: 245px;
+	height: 195px;
+	border: 1px solid #a1a192;
+	margin: 0 auto;
+	margin-top: 100px;
+
+}
+.content1 ul{
+	float: right;
+	overflow: hidden;
+}
+.content1 ul li {
+	padding-left: 27px;
+	padding-top: 0px;
+	width: 95px;
+	height: 25px;
+	float: left;
+	line-height: 25px;
+	text-align: left;
+	color: #a1a192;;
+}
+
+.content2 ul{
+	float: right;
+	overflow: hidden;
+}
+.content2 ul li {
+
+	padding-left: 27px;
+	width: 95px;
+	height: 25px;
+	float: left;
+	line-height: 25px;
+	text-align: left;
+
+}
+.content3 ul{
+	float: right;
+	overflow: hidden;
+}
+.content3 ul li {
+	padding-left: 27px;
+	padding-top: 0px;
+	width: 95px;
+	height: 25px;
+	float: left;
+	line-height: 25px;
+	text-align: left;
+}
+.content1{
+	overflow: hidden;
+	border-bottom: 1px solid #a1a192;
+		padding-top: 2px;
+}
+.content2{
+	overflow: hidden;
+	border-bottom: 1px solid #a1a192;
+
+}
+.nav2{
+	font: 12px;
+	color: #a1a192;
+	float: right;
+}
+
+

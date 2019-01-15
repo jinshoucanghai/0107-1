@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选择器</title>
+	<style>
+		*{
+			/*通用选择器*/
+			/*css2版本中开始提供*/
+		}
+        div{
+        	/*元素选择器*/
+        	/*css1开始提供*/
+        }
+        #box{
+        	/*id选择器*/
+        }
+        .box{
+           /*class选择器,也叫类选择器*/
+        }
+        [type="button"]{
+             border:1px solid #000;
+             width:100px;
+             height:35px;
+        }
+        [title="呵呵"]{
+             border:1px solid #000;
+             width:100px;
+             
+        }
+        span,p,input{
+        	color:red;
+        	font-size: 55px;
+        }
+        div div{
+        	color:blue;
+        }
+        div>div{
+        	color:orange;
+        }
+	</style>
+</head>
+<body>
+	<div>
+		<span id="box">1</span>
+		<div class="box" title="呵呵">
+			1
+			<div>2</div>
+           <div>2</div>
+		</div>
+		<input type="button" value="3">
+	</div>
+</body>
+</html>

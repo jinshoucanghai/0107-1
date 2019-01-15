@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		
+/*		[href="https://www.baidu.com"]{
+			background: red;
+		}
+*/
+/*         [href^="https"]{
+         	background: red;
+         	属性开头匹配选择器
+         }
+         */
+/*         [href$=".cn"]{
+         	background: red;
+         	/*属性结尾的选择器*/
+         /*}*/
+
+     /*     [href*="baidu"]{
+         	background: blue;
+         	属性值包含指定字符的属性选择器
+         }
+ */
+
+		ul>li{
+			border:1px solid red;
+			margin:10px;
+		}
+/*
+		p+li{
+			background: #000;
+			color:#fff;
+		}
+*/
+
+p ~ li{
+	background: red;
+	display: none
+}
+
+
+
+	</style>
+</head>
+<body>
+	<a href="https://www.baidu.com">百度</a>
+	<a href="http://www.google.cn">google</a>
+
+     <ul class="box">
+     	<li>
+     		大儿子
+           <ul>
+	           	<li>孙女</li>
+	 			<li>孙子</li>	
+           </ul>
+     	</li>
+     	<p>1</p>
+     	<li>二儿子</li>
+     	<li>三女儿</li>
+     </ul>
+
+</body>
+</html>

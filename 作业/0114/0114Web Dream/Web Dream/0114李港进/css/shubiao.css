@@ -1,0 +1,39 @@
+html,body,span,ul,li{
+	padding: 0;
+	margin: 0;
+
+}
+ul{
+	list-style: none;
+}
+/*body{
+		font:12px; 
+}*/
+.zd{
+	width: 250px;
+	height: 244px;
+	margin: 10px auto;
+    background-color: #ffffff;
+    border: 1px solid  #d0d0d0;   
+}
+.zd ul{
+	list-style: none;
+}
+.zd ul li {
+	padding: 3.5px 24px;
+	/*line-height: 22px;*/
+	font-size: 12px;
+}
+.zd ul hr{
+	background-color: #e0e0e0;
+	border: none;
+	width: 248px;
+	height: 1px;
+}
+.er{
+	float: right;
+	color: #8e8e8e;
+}
+.hui{
+	color: #8e8e8e;
+}

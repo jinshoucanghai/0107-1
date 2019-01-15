@@ -1,0 +1,84 @@
+html,body,ul,li,div{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	padding: 0;
+	margin:0;
+	list-style: none;
+}
+div{
+	width: 249px;
+	height: 244px;
+	background: white;
+	font-size: 12px;
+	overflow: hidden;
+	border: 1px solid #BEBEBE;
+	margin-top: 10px;
+	margin-left: 100px;
+}
+div .ul1{
+	margin-left: 25px;
+	float: left;
+
+}
+div .ul1 li{
+	margin-top: 8px;
+}
+div .ul2{
+	float: right;
+	text-align: right;
+	margin-right: 25px;
+}
+div .ul2 li{
+	margin-top: 8px;
+}
+.hr1{
+	width: 100%;
+	margin-top: 80px;
+	border: 0.5px solid #F2F2F2;
+}
+div .ul3{
+	margin-left: 25px;
+	float: left;
+	margin-top: -5px;
+
+}
+div .ul3 li{
+	margin-top: 8px;
+}
+div .ul4{
+	float: right;
+	text-align: right;
+	margin-right: 25px;
+	margin-top: -5px;
+}
+div .ul4 li{
+	margin-top: 8px;
+}
+.hr2{
+	width: 100%;
+	margin-top: 106px;
+	border: 0.5px solid #F2F2F2;
+}
+div .ul5{
+	margin-left: 25px;
+	float: left;
+	margin-top: -6px;
+
+}
+div .ul5 li{
+	margin-top: 9px;
+}
+div .ul6{
+	float: right;
+	text-align: right;
+	margin-right: 25px;
+	margin-top: -5px;
+}
+div .ul6 li{
+	margin-top: 8px;
+}
+.li1{
+	color: #BEBEBE;
+}
