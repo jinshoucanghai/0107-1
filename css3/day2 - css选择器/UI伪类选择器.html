@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <style>
+    	:enabled{
+    		border:1px solid red;
+    		/*启用状态*/
+    	}
+    	:disabled{
+    		border:1px solid blue;
+    		/*禁用状态*/
+    	}
+    	:checked{
+    		width:100px;
+    		height:100px;
+    		/*选中状态*/
+    	}
+    	[type="checkbox"]:default{
+    		width:50px;
+    		height:50px;
+    	}
+    </style>
+</head>
+<body>
+	<form action="">
+		<input type="checkbox" checked>
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="text">
+		<input type="text" disabled>
+	</form>
+</body>
+</html>
