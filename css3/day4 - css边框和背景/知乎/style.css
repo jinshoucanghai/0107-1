@@ -8,6 +8,8 @@ body{
     color:#666;
     font-family: "微软雅黑";
     background:#f6f6f6;
+    height:4000px;
+    padding-top:50px;
 }
 
 ul,ol{
@@ -59,6 +61,11 @@ a:hover{
     height:55px;
     box-shadow: 0px 2px 2px #eee;
     background: #fff;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 9999;
 }
 
 .top li{
@@ -119,7 +126,191 @@ a:hover{
 }
 
 header{
+   border-radius: 3px;
+}
 
+
+header .banner{
+    border-radius: 3px;
+    margin-top:15px;
+    height:240px;
+    background: url(https://pic2.zhimg.com/80/v2-7da863d92a3279c1a5f52f74aba23f70_r.jpg) no-repeat -20px -40px;
+    background-size:120%;
+}
+
+header .user{
+    height:135px;
+    width:100%;
+    position: relative;
+    background: #fff;
+
+}
+header .user>.userface{
+    width:168px;
+    height:168px;
+    overflow: hidden;
+    border:5px solid #f6f6f6;
+    position: absolute;
+    top:-56px;
+    left:20px;
+    border-radius: 8px;
+}
+header .user>.userface img{
+    height:100%;
+}
+header .user h1{
+    text-indent: 220px;
+    color:#000;
+    padding-top:20px;
+    margin-bottom:10px;
+}
+header .user p{
+    padding-left: 230px;  
+    margin-bottom:5px;
+}
+header .user p .fa-suitcase{
+    margin-right:10px;
+}
+header .user p .fa-angle-down{
+    margin-right:15px;
+}
+header .user h1 small{
+    font-size: 65%;
+    font-weight: 100;
+    margin-left:10px;
+}
+header .user a.edituser{
+    display: inline-block;
+    width:120px;
+    height:30px;
+    line-height:30px;
+    border-radius: 5px;
+    text-align:center;
+    border:1px solid #0084ff;
+    color:#0084ff;
+    position: absolute;
+    right:20px;
+    bottom:20px;
+}
+header .user a.edituser:hover{
+    background: #0084ff;
+    color:#fff;
+}
+
+.main,.sider{
+   margin-top: 10px;
+   border-radius: 3px;
+}
+
+.main{
+    width: 700px;
+    height:700px;
+    background:#fff;
+}
+.menu {
+    height:50px;
+    border-bottom: 1px solid #ddd;
+}
+.menu a{
+    height:50px;
+    line-height: 50px;
+    font-size: 16px;
+    margin: 0 13px;
+    padding:0 10px;
+    display: inline-block
+}
+.menu a.active{
+    height:47px;
+    line-height: 47px;
+    font-weight: bold;
+    border-bottom:3px solid #0084ff
+}
+
+article{
+    width:94%;
+    margin:0 auto;
+}
+
+.me{
+    width:100%;
+    font-size: 15px;
+    color:#000;
+    padding:14px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.good{
+    width:100%;
+    font-size: 14px;
+    margin-top:15px;
+    color:#777;
+    overflow: hidden;
+}
+
+
+
+.card{
+    width:100%;
+    overflow: hidden;
+    height:auto;
+}
+
+.card-header{
+    overflow: hidden;
+    height:auto;
+}
+
+.card-header h3{
+    color:#000;
+    padding:10px 0;
+    font-size: 18px;
+}
+
+.card-header .face{
+    width:100%;
+    overflow: hidden;
+    height:auto;
+}
+
+.card-header .face img{
+    border-radius: 3px;
+    height:45px;
+    margin-right:15px;
+}
+
+.card-header .face h6{
+    font-size: 15px;
+    color:#000;
+}
+
+.card-header .face h6 small{
+    display: block;
+    font-size: 13px;
+    font-weight: 300
+}
+
+.card-header p{
+    padding:10px 0;
+    color:#0084ff;
+}
+
+.card-body{
+    line-height: 24px;
+    text-indent: 2em;
+    text-align: justify;
+    font-size: 14px;
+    color:#333;
+}
+
+.sider{
+    width:290px;
+    margin-left:10px;
+    height:700px;
+    background:#fff;
+}
+
+.more{
+    color:#0084ff;
 }
 
 footer{
