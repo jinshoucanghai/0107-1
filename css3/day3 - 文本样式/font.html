@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* p{ */
+            /* font-size: x-small; */
+            /* 
+                ----设置字体大小.,从小到大,固定值-------------------
+                xx-small
+                x-small
+                small
+                medium
+                large
+                x-large
+                xx-large
+                ----设置字体相对于父元素字体的大小------------------
+                smaller
+                larger
+                -----------数字+px-------------------------------
+                15px
+                ----数字+%---------------------------------------
+                150%
+
+             */
+        /* } */
+        /* body{
+            font-variant: small-caps;
+            font-family:"楷体","微软雅黑"
+        }
+        div{
+            font-size:18px;
+            font-variant: normal
+        }
+        div span{
+            font-style:oblique;
+            font-style:italic;
+            
+        }
+        div em{
+            font-style: normal ;
+            font-weight: lighter ;
+        } */
+
+        @font-face{
+            font-family: '方正龙爪简体';
+            src:url('FZLongZhaoJW.ttf')
+        }
+        div p{
+            font-size: 55px;
+            /* font:bold 50px "方正龙爪简体"   */
+            /* [是否倾斜] [是否加粗] [是否转小型大写] 字体大小 字体名称 */
+            font-family: '方正龙爪简体'
+        }
+    </style>
+</head>
+<body>
+    <p>
+        字体大小
+    </p>
+    <div>
+       <span>font-size</span>
+       <em>字体大小</em>
+    </div>
+
+    <div>
+        <p>
+            复合写法
+        </p>
+    </div>
+</body>
+</html>
