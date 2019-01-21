@@ -78,7 +78,7 @@
         var timer = null;
         $('button').on('click', init);
         function init(e) {
-            $('h1').html("0910作业系统")
+            $('h1').html("0107作业系统")
             $(".game").html('')
             // console.log(e)
             e.stopPropagation()

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       div{
+            width:300px;
+            height:300px;
+            background: white;
+            border:1px solid green;
+            /* animation-name:lulu;
+            animation-duration:3s;
+            animation-timing-function: cubic-bezier(1, 0, 0, 1);
+            animation-delay: 0s;
+            animation-iteration-count: 2; 
+            /* infinite 无限次 */
+            /*animation-direction:alternate ;
+            animation-fill-mode: both; */
+
+            animation:lulu 1s ease 2 alternate 0s both
+           
+
+       }
+      div:hover{
+        animation-play-state: paused
+      }
+
+
+
+      @-webkit-keyframes lulu{
+          0%,100%{
+              background: white;
+              margin-left:0px;
+          }
+          50%{
+              background:black;
+              margin-left:500px;
+          }
+       }
+
+
+      /* name 可以自定义 */
+       @keyframes lulu{
+          0%,100%{
+              background: white;
+              margin-left:0px;
+          }
+          50%{
+              background:black;
+              margin-left:500px;
+          }
+       }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- 
+       animation-name  用来指定一个动画的名称,这个名画的名称,必须对应一个@keyframes规则.
+       animation-duration 用来设置动画的播放时间
+       animation-timing-function 用来设置动画的播放方式
+       animation-delay 用来指定动画的延迟时间
+       animation-iteration-count 播放动画的循环次数
+       animation-direction 播放方向
+       animation-play-state  用来控制动画的播放状态
+       animation-fill-mode 设置动画时间外属性
+       animation 以上的简写
+
+       @keyframes
+
+     -->
+     <div>
+         马上我就要学javascript
+     </div>
+</body>
+</html>

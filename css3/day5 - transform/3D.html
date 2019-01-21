@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        body{
+            /* 设置3D呈设置透视距离 */
+            transform-style: preserve-3d;
+            perspective-origin: left,top;
+            perspective:1500px;
+        }
+       div{
+           width:100px;
+           height:100px;
+           background: red;
+           /* transform: translate3d(200px,100px,-530px); */
+           transform:perspective(1000px) scale3d(1,1,7) rotateX(45deg)
+       }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

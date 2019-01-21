@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            background-color: red;
+            /* transition-property: all;
+            transition-duration: 1s; */
+            /* transition: 10s ;
+            transition-timing-function: steps(10,end);
+            transition-delay: 5s; */
+            font-size: 15px;
+            transition:width 1s cubic-bezier(1, 0, 0, 1) 0s,height 1s ease 0s,font-size 1s ease 0s,background-color 1s ease 1s,margin-left 1s cubic-bezier(0.68, -0.55, 0.265, 1.55); 2s;
+        
+        }
+        div:hover{
+            width:500px;
+            height:500px;
+            background: blue;
+            margin-left:500px;
+            font-size: 55px;
+
+            /* ease  linear ease-in ease-out ease-in-out */
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        呵呵
+    </div>
+</body>
+</html>
