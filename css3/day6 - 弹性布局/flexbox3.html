@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    ul{
+        width: 500px;
+        background: red;
+        list-style: none;
+        padding:0;
+        display: flex;
+        /* display: inline-flex; */
+        flex-direction: row;
+            /* 
+               row 从左向右 默认
+               row-reverse  从右向左
+               column  从上到下
+               column-reverse 
+             */
+        flex-wrap:wrap;
+            /* 
+                nowrap  默认值  都在一行或一列
+                wrap  遇到边界 自动换行
+                wrap-reverse
+            */
+        flex-flow:row wrap;
+            /* 以上两个属性的复合写法 */
+        justify-content:center;
+        /*  
+           flex-start  子元素(伸缩项目)以起始点靠齐
+           flex-end    子元素(伸缩项目)以结束点靠齐
+           center       子元素(伸缩项目)以中心点靠齐
+           space-between  (伸缩项目平均分布)
+           space-around   伸缩项目平均分布   但是两端保留一半的空间
+         */
+         align-items: flex-end;
+            /* 
+            flex-start  子元素(伸缩项目)以顶部为基准,清理下部额外空间
+            flex-end    子元素(伸缩项目)以底部为基准,清理上部额外空间
+                center  子元素(伸缩项目)以中部为基准,清理上下部额外空间
+                baseline  子元素(伸缩项目)以基线为基准,清理下部额外空间
+                stretch  子元素(伸缩项目)填充整个容器  默认值
+            */
+        
+    }
+    li{
+            width:50px;
+            border:1px solid #ddd;
+            background: silver;
+            margin:5px;
+            padding:5px;
+        }
+        li:nth-child(2){
+            align-self: center;
+                    /* 
+                    针单个元素进行设置 (子元素)
+            flex-start  子元素(伸缩项目)以顶部为基准,清理下部额外空间
+            flex-end    子元素(伸缩项目)以底部为基准,清理上部额外空间
+                center  子元素(伸缩项目)以中部为基准,清理上下部额外空间
+                baseline  子元素(伸缩项目)以基线为基准,清理下部额外空间
+                stretch  子元素(伸缩项目)填充整个容器  默认值
+            */
+            /* flex:1; */
+            /* flex属性和旧版本中的box-flex类似.用来控制容器的比例分配 */
+        }
+        li:nth-child(4){
+            align-self: center;
+            flex:1;
+            order:15;
+            /* order 调整顺序 */
+        }
+    </style>
+</head>
+<body>
+        <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6<br>6<br>6<br>6<br>6<br></li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+            </ul>  
+</body>
+</html>

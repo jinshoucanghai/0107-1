@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>旧版</title>
+    <style>
+        div{
+            display: -moz-box;
+            display:-webkit-box;
+            display: box;
+            /* display: -moz-inline-box;
+            display:-webkit-inline-box;
+            display: inline-box; */
+            -webkit-box-orient: horizontal;
+            /* 
+               vertical  上下垂直 
+               horizontal 左右水平(默认值)
+               inline-axis  子元素沿着内联轴排列显示
+               block-axios  子元素沿着块轴排列显示
+            */
+            -webkit-box-direction: normal;
+            /* 
+               normal  正常排序(默认值)
+               reverse 逆序
+             */
+
+             -webkit-box-pack:justify;
+             /* 
+               start  子元素(伸缩项目)以起始点靠齐
+               end    子元素(伸缩项目)以结束点靠齐
+               center 子元素(伸缩项目)以中心点靠齐
+               justify  平均分布   -webkit-支持   -moz-不支持
+              */
+
+              -webkit-box-align:stretch;
+              /* 
+                 start  子元素(伸缩项目)以顶部为基准,清理下部额外空间
+                 end    子元素(伸缩项目)以底部为基准,清理上部额外空间
+                 center  子元素(伸缩项目)以中部为基准,清理上下部额外空间
+                 baseline  子元素(伸缩项目)以基线为基准,清理下部额外空间
+                 stretch  子元素(伸缩项目)填充整个容器  默认值
+               */
+        }
+        p{
+            width:50px;
+            border:1px solid #ddd;
+            background: silver;
+            margin:5px;
+            padding:5px;
+        }
+
+        p:nth-child(1){
+            -webkit-box-flex:1;
+            /* 
+               设置每个伸缩项目占用的比例,当启用这个属性之后.元素width度没有任何意义
+             */
+             -webkit-box-ordinal-group: 3
+        }
+
+        p:nth-child(2){
+            -webkit-box-flex:1;
+            -webkit-box-ordinal-group: 4
+        } 
+        p:nth-child(3){
+            -webkit-box-flex:1;
+            -webkit-box-ordinal-group: 2
+        } 
+        p:nth-child(4){
+            -webkit-box-flex:1;
+            -webkit-box-ordinal-group: 1
+            /* 可以设置子元素的显示位置 */
+        } 
+    </style>
+</head>
+<body>
+    <div>
+        <p>1<br>11<br>1</p>
+        <p>2<br>22<br>22<br>22<br>2</p>
+        <p>3</p>
+        <p>4</p>
+    </div>
+</body>
+</html>
