@@ -1,0 +1,133 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+ol,ul{
+	list-style: none;
+}
+
+body{
+	font-family: "微软雅黑";
+	color:#666;
+}
+
+a{
+	text-decoration: none;
+	color:#666;
+}
+
+a:hover{
+	color:red;
+}
+
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+
+.clear:before,
+.clear:after{
+    content:"";
+    clear:both;
+    visibility: hidden;
+}
+
+.wrap{
+	width:1200px;
+	height:auto;
+	overflow: hidden;
+	margin:0 auto;
+	/* clear:both */
+}
+
+
+.top,.content,footer{
+	max-width: 1920px;
+	min-width: 1200px;
+	width:100%;
+	margin:0 auto;
+}
+
+
+.top{
+	height:60px;
+	line-height:60px;
+	background: #222;
+}
+
+.nav li{
+	float:left;
+}
+
+.nav li.active a,
+.nav li a:hover{
+	background:orangered;
+	color: #fff;
+	line-height:55px;
+	height:55px;
+	border-bottom:5px solid #000;
+}
+
+.nav a{
+	display: inline-block;
+	padding:0 10px;
+	margin:0 5px;
+	color:#eee;
+}
+
+.white{
+	background: #fff
+}
+
+.banner{
+	background: darkred;
+	height:auto;
+	overflow: hidden;
+}
+
+.banner li{
+	position: relative;
+}
+.banner li h3{
+	position: absolute;
+	z-index: 99;
+	left:0;
+	right:0;
+	width:100%;
+	bottom:10px;
+	background: #000;
+}
+.banner img{
+	width:100%;
+	border:none;
+	display: block;
+}
+
+.text-left{
+	text-align:left
+}
+.text-center{
+	text-align:center
+}
+.text-right{
+	text-align:right
+}
+
+
+.content{
+	height:800px;/*临时高度*/
+}
+
+.tj li{
+	float:left;
+	width:25%;background: #333;
+	height:200px;
+}
+.tj li>div{
+	width:100px;
+	height:100px;
+	background: red;
+}
