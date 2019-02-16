@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>typeof</title>
+</head>
+<body>
+    <!-- 
+        ECMAScript 有五种简单数据类型 
+        Undefined
+        Null
+        Boolean
+        Number
+        String
+        复杂数据类型
+        Object
+    -->
+
+    <script>
+    // typeof 操作符
+    //  它是用来检测变量的数据类型，对于值或是变量便用typeof操作符会返回以下字符串
+    // undefined    未定义
+    // boolean      布尔值
+    // string       字符串
+    // number       数值
+    // object       对象或是null
+    // function     函数
+
+    var username;
+        console.log(typeof(username))
+        username = '应煜鑫';
+        console.log(typeof '林元民')
+        console.log(typeof(username))
+
+        // undefined类型只有一个值，就是undefined。
+        // 在使用var声明变量，但没有对其初始化符值时，这个变量的值就是undefined
+        // console.log(aaa) 
+        console.log(typeof aaa);
+
+        // typeof 操作未声明的变量时。返回undefined 不会报错
+
+        // null类型是只有一个值的数据类型，就是null 它表示一个空对象引用（指针），而typeof操作符检测null会返回object
+
+        var age = null;
+        console.log(typeof age)
+        // 特别声明：undefined是派出于null,所以根据ecma-262的规则对他们的相等性检测返回true
+        console.log(undefined==null) //true
+
+
+        // boolean类型 有一个两个值，true和false  true不一定等于1 ，false不一定等于0;
+        var box = false;
+        console.log(typeof box)
+
+        var hello = '';
+        var h = Boolean(hello);  //显示转换
+        console.log(typeof h)
+
+        if(hello){
+            console.log('如果转换成功，为true就执行我')
+        }else{
+            console.log('如果转换成功，为false就执行我') 
+        }
+
+        // 转换为true条件，任何非空字符串以及任何非0数字值（包括无穷大）以及任何的对象，本身为true;
+        // 转换为false条件，空字符串，0，NaN,null undefined false
+
+        // number类型包括两种数值：整型和浮点型。
+        // 最基本的数值字面量就是十进制的整数
+        var n = 100;   //十进制整数
+        var n = 070;   //八进制，56
+        var n = 0xAF; //十六进制 175
+
+        // 浮点型
+        var a = 3.9;
+        var a = .8
+        var a = 11.0;
+        // 由于保存浮点数需要的内存空间比整型数值大两部，所以ecmascript会自动把可以转换为整型的浮点数转成整型
+        
+        // 指数次幂
+        var e = 1.12e9;
+        var e = 0.0000000000000123
+        // alert(e);
+
+
+        // alert(0.1+0.6)
+        //  浮点数范围
+        console.log(Number.MIN_VALUE) //最小值
+        console.log(Number.MAX_VALUE) //最大值 
+
+        console.log(Infinity)
+        console.log(-Infinity)
+
+        var a = -1000e10000;
+        // isFinite 如果没有超过返回true  如果超过返回false
+        console.log(isFinite(a))
+
+    // NaN 非数值，not a number 用于表示一个本来想要返回数值的操作数未返回数值的情况。
+       
+       var b = 12 / 0 * 0;
+       console.log(b)
+       // 任何和NaN进行计算的值，结果都是NaN;
+
+       var c = 0/0;
+       var d = '你好'/0;
+
+       console.log(typeof d) //NaN类型是number
+      
+
+    //   isNaN 函数会检测这个值到底是不是NaN,如果是NaN，返回true
+    //   否则返回false
+       console.log(isNaN(NaN))
+       console.log(isNaN(25))
+       console.log(isNaN('25'))
+       console.log(isNaN('NaN类型是number'))
+       console.log(isNaN(true))
+      
+
+       var o = {
+           toString:function(){
+               return 'NaN1243'
+           }
+       }
+
+        console.log(isNaN(o))
+
+
+        console.log(Number(true))
+        console.log(Number(25))
+        console.log(Number(null))
+        console.log(Number(undefined))
+
+        console.log(Number('09.444000'))
+
+        console.log(Number('应华09.444000'))
+
+        
+    </script>
+</body>
+</html>

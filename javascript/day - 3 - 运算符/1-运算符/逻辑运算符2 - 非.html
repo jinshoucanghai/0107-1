@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ||
+        // 逻辑非运算符，可以用于任何的值，不管这个值是什么类型，这个运算符都会返回一个布尔值
+        // 运行流程，先把这个值转换成布尔值，然后取反;
+
+        // 操作数是一个对象，返回false
+        var box = !{};  //false
+        // 操作数是一个空字符串;  true
+        var box = !'';
+        // 操作数是一个非空字符串  false
+        var box = !'aaa';
+        // 操作数是0,返回true
+        var box = !0;
+        //操作数是任意的非0数值（包含Infinity）,返回false
+        var box = !Infinity;
+        // 操作数是null 返回true
+        var box = !null;
+        // 操作数是undefined 返回true
+        var box = !undefined;
+        document.write(box)
+        
+    </script>
+</body>
+</html>

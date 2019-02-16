@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>只能操作一个值的运算符叫做一元运算符</title>
+</head>
+<body>
+    <script>
+        // 1,递增++   递减--
+        var age = 100;
+        ++age;   //把age累加一个1，相当于  age = age + 1;
+        console.log(age)   // 这一步是输出结果 101
+        --age    //把age累减一个1，相当于  age = age - 1;
+        console.log(age)
+
+        age++   //在没有赋值操作的时候，情况同上
+        age--   //在没有赋值操作的时候，情况同上
+        // 在没有赋值操作的时候 前置和后置是一样的
+        // 但是在赋值操作时，如果是前置，哪么前置运算符会先累加或累减，再赋值
+        // 如果是后置会先赋值，再累加或累减
+
+        var box = 100;
+        var height = ++box;
+        var ints = box++;
+        console.log(height,ints)
+    </script>
+</body>
+</html>

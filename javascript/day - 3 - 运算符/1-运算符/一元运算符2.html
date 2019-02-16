@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var box = '89';  
+           box++;   //数值字符串会自动转换成数值
+           document.write(box)
+        document.write('<br />')
+       var strbox = 'abc';
+           strbox++;
+           document.write(strbox)   //NaN 字符串包含非数值，无法计算，结果为NaN
+        document.write('<br />')
+       var bool = true;
+           bool++;    
+           document.write(bool)   //true转换成数值是1，累加就是2
+    </script> 
+</body>
+</html>

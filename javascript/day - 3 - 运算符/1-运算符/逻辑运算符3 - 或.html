@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ||
+        // 或运算符任意一边为true.返回true
+        // 只有两边都为false,才返回false
+
+        var box = (9>7) || (7>9);
+        // 第一个操作数是对象，则返回第一个操作数
+        var box = new Object() || (5>3);
+        // 第一个操作数的结果为false,则返回第二个操作数
+        var box = (9<7) || (7>9);
+        // 两个操作数是都是对象，则返回第一个操作数
+        var box = new Object() || {};
+        // 两个操作数都是null
+        var box = null || null;
+        // 两个操作数都是undefined 返回undefined
+        var box = undefined || undefined;
+        document.write(box)
+
+
+    </script>
+</body>
+</html>

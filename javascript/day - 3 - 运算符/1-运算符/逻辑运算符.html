@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 第一个操作是对象，则返回第二个操作数
+        var box = {} && (5>4)
+        document.write(box)
+        // 第二个操作是对像，则第一个操作数返回true，才返回第二个操作数，否则false
+       var box = (5<3) && {};
+       document.write(box)
+      //    第一个操作数是null 就返回null
+       var box = null && (5>3);
+       document.write(box)
+    // 第一个操作数是undefined 则返回undefined
+       var box = undefined && (5>3);
+       var box = (5<3) && undefined;
+       document.write(box)
+    </script>
+</body>
+</html>
