@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //for语句是一种先判断，后运行的循环语句，但是具有在执行循环之前的初始变量和定义循环后要执行代码的能力;
+
+    for(var n=1;n<=5;n++){
+       document.write(n+"<br />")
+    }
+
+    /*
+      第一步：声明变量var n = 1;
+      第二步，n<=5
+      第三步， document.write(n+"<br />")
+      第四步, n++
+      第五步，从第二步开始再来，直接条件表达式为false
+    */ 
+
+    var a = 1;
+    for(;a<=5;){
+        document.write(a+"<br />");
+        a++
+    }
+
+    </script>
+</body>
+</html>

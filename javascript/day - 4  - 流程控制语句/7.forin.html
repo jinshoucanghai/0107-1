@@ -8,17 +8,17 @@
 </head>
 <body>
     <script>
-         var n = '100'; 
-             +n;  
-             console.log(typeof +n)
-            //  Number(n)
-         var p = 'abc';
-             +p
-             console.log(+p)
+       var scl = {
+           'name':"应华",
+           'age':37,
+           'height':175
+       }
 
-         var c = '100ABC';
-             -c;
-             console.log(-c)
+       for(var i in scl){
+           document.write(i+"<br>")
+       }
+
+       
     </script>
 </body>
 </html>

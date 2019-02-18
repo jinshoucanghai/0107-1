@@ -8,17 +8,21 @@
 </head>
 <body>
     <script>
-         var n = '100'; 
-             +n;  
-             console.log(typeof +n)
-            //  Number(n)
-         var p = 'abc';
-             +p
-             console.log(+p)
+       var o = {
+           n:1,
+           b:2
+       }
+        
 
-         var c = '100ABC';
-             -c;
-             console.log(-c)
+        var nn = o.n;
+]
+
+       with(o){
+           var a = n;
+           var c = b
+       }
+
+       alert(a)
     </script>
 </body>
 </html>

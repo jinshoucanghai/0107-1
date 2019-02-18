@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var week = 5;
+        switch(week){
+            case 1:
+               document.write('周一');
+               break;   //防止语句穿透
+            case 2:
+               document.write('周二');
+               break;   //防止语句穿透
+            case 3:
+               document.write('周三');
+               break;   //防止语句穿透
+            default:    //相当于if语句中的else,否则的意思
+               document.write('error')
+        }
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // if语句条件判断，一共有三种形式
+        // 1，一行的if语句，判断后为true，执行后面的一条语句
+        var hello = 'hello world';
+        if(hello) document.write('世界你好<br>') 
+        // 2,两行操作，判断后也是执行一条句语
+        var num = 100;
+        if(num>10)
+             document.write('嗯，我大于10<br>');
+            //  t第二条和if语句无关，都会执行
+             document.write('不管怎么样，我都会执行<br>')
+       //3,复合语句 
+       var abc = 100;
+        if(abc>10){
+             document.write('嗯，我大于10<br>');
+             document.write('当我在{}这里的时候。判断后合并成一条复合语句')
+        }
+       
+
+    //    if语句里面的表达式，ecmascript会自动的调用Boolean()转型函数将这个表达式的结果转成
+    //    一个布尔值，如果结果为true,就执行后面一条句话，否则不执行
+    </script>
+</body>
+</html>
