@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+       什么是对象：有人说一切皆对象，也有人说万物皆对象，但是这样的说法太抽象。等于没说！！
+       对象其实是一种类型，引用类型。而对象的值就是引用类型的实例。在ECMAscript当中引用类型
+       是一种数据结构。它会把数据和功能组织在一起，在别的语言中被称为“类”，但是在ecmascript(es2015)之前没有这种东西
+       所以说，ecmascript虽然是一门面向对象的语言，却不具备面向对象语言所支持的类和接口基本结构（这个类在es6之后被支持）
+    </pre> 
+
+    <script>
+        var obj = new Object();  //new 方式
+        obj.name = 'ksk ksk';
+        obj.age = 28;   //创建对象属性字段
+
+
+
+        var box = {
+            'key':"value",
+            "name":"哈哈",
+            age:33
+        }
+
+        var oo = {}
+
+        oo.a='1';
+
+        console.log(oo.a)
+        console.log(oo['a'])
+
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+函数是一个可以被重复执行的代码，或任意多次的调用;函数可以传参，也可以不传参！
+如果传参，函数会用这些参数来计算一个返回值。这个值就会成为函数调用表达式的值
+函数对任何语言来说。都是一个核心概念。我们能通过函数来封装任意多条语句。，
+而且还可以在任何地方，任何时候去调用执行。在ecmascript中函数是用function 
+关键字来声明后面根着一个函数体以及参数体;
+    </pre>
+    <script>
+        // function bool(){ 
+        //     document.write('我必须被调用才会执行')
+        // }
+
+        // console.log(bool());
+
+        // function user(name,age){
+        //     document.write('您的姓名是：'+name+'，年龄：'+age)
+        // }
+        
+        // user('应华',37)
+
+        // return 返回值
+        
+        // function abc(name,age){
+        //     return name+'---'+age;
+        // }
+       
+        // document.write(abc('应华',37))
+        // console.log(abc('应华',37))
+
+        function box(a,b){
+            return a+b;
+            console.log(1111)   //我执行不到。因为return有一个退出当前函数的功能
+        }
+        var n = box(50,40);
+        console.log(n)
+    </script>
+</body>
+</html>
