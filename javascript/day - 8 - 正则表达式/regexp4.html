@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>获取控制</title>
+</head>
+<body>
+    <script>
+        // var pattern = /b..du/;   //.匹配除“\n”之外的任何单个字符。要匹配包括“\n”在内的任何字符，请使用像“(.|\n)”的模式。
+        // var str = 'buudu';
+        // document.write(pattern.test(str))
+
+        // var pattern = /b.*du/;   //*匹配前面的子表达式零次或多次。例如，zo*能匹配“z”以及“zoo”。*等价于{0,}。
+        // var str = 'b324324242424du';
+        // document.write(pattern.test(str))
+
+        // var pattern = /b[a-zA-Z]*du/;   //[a-z]字符范围。匹配指定范围内的任意字符。例如，“[a-z]”可以匹配“a”到“z”范围内的任意小写字母字符。
+        // var str = 'babcANBCdu';
+        // document.write(pattern.test(str))
+
+
+
+        // var pattern = /b[0-9]*du/;   //[0-9]字符范围。匹配指定范围内的数字字符
+        // var str = 'b123du';
+        // document.write(pattern.test(str))
+
+
+    
+        // var pattern = /b[^0-9]*du/;   //^非  -- 负值字符范围。匹配任何不在指定范围内的任意字符。例如，“[^0-9]”可以匹配任何不在“0”到“9”范围内的任意字符。
+        // var str = 'b中文du';
+        // document.write(pattern.test(str))    
+      
+
+        // var pattern = /b[a-z][A-Z]+du/;   //+ 匹配前面的子表达式一次或多次。例如，“zo+”能匹配“zo”以及“zoo”，但不能匹配“z”。+等价于{1,}。
+        // var str = 'baZAAAAdu';
+        // document.write(pattern.test(str))    
+
+
+        // var pattern = /b\w+du/;   //\w	匹配包括下划线的任何单词字符。等价于“[A-Za-z0-9_]”。
+        // var str = 'b_0Aadu';
+        // document.write(pattern.test(str))    
+
+
+        // var pattern = /b\d+du/;   //\d	匹配一个数字字符。等价于[0-9]。
+        // var str = 'b064du';
+        // document.write(pattern.test(str))    
+
+        // var pattern = /b\D+du/;   //\D	匹配一个非数字字符。等价于[^0-9]。
+        // var str = 'b%#%$#%#%wdu';
+        // document.write(pattern.test(str))    
+
+        // var pattern = /b\D{1,}du/;   //\D{1,}	匹配至少一个非数字字符
+        // var str = 'baaeedu';
+        // document.write(pattern.test(str))    
+
+
+        // var pattern = /^bai[0-9]+du$/;   //^ $  ^从开头开如匹配   $从结尾开始匹配
+        // var str = 'bai1111du';
+        // document.write(pattern.test(str))    
+
+
+        // var pattern = /^bai\sdu$/;   //\s 匹配任何空白字符，包括空格、制表符、换页符等等。等价于[ \f\n\r\t\v]。
+        // var str = 'bai\ndu';  //true
+        // document.write(pattern.test(str))    
+
+
+        // var pattern = /baidu\b/;   //\b 匹配一个单词边界，也就是指单词和空格间的位置。例如，“er\b”可以匹配“never”中的“er”，但不能匹配“verb”中的“er”。
+        // var str = 'abaidu';  //true
+        // document.write(pattern.test(str))    
+
+
+        // var pattern = /baidu|google|taobao/;   //| 匹配x或y。例如，“z|food”能匹配“z”或“food”。“(z|f)ood”则匹配“zood”或“food”。
+        // var str = 'google';  //true
+        // document.write(pattern.test(str))    
+
+        // var pattern = /(baidu){2,4}/;   //()  匹配分组字符串当中的2到4次
+        // var str = 'baidubaidubaidubaidu';  //
+        // document.write(pattern.test(str))    
+
+        // var pattern = /[a-z]+?/;   //+？ 关闭贪婪 
+        // var str = 'abcdkfdsjfskjlkfjkshfskjhfslorwures';
+        // var result = str.replace(pattern,'xxxxxx')
+        // document.write(result)
+
+        // var pattern = /0(.+?)0/g;   // 关闭贪婪 开启全局
+        // var str = 'this is 0baidu0,this is 0baidu0,this is 0baidu0,';
+        // var result = str.replace(pattern,'<strong>$1</strong>')
+        // document.write(result) 
+ 
+
+       var email = /^([a-zA-Z0-9_\.\-]+)@([a-zA-Z0-9_\.\-]+)\.([a-zA-Z]){2,6}$/;
+       var str = 'yyx219@qq.com.cn';
+
+       document.write(email.test(str))
+    </script>
+</body>
+</html>
