@@ -1,0 +1,22 @@
+<script>
+//    call和apply的方法相同，区别仅仅在于接收参数的方式不同
+// 两者第一个参数都是作用域
+// 变化在第二个参数。apply接收引用类型参数   call直接接收其余的在数传递给函数
+
+function box(n,m){
+    return n+m;
+}
+
+function sayBox(n,m){
+   return box.call(this,n,m)
+        //    thisw作用域表示window 
+        // [] 表示box函数所需要的参数
+}
+
+
+document.write(sayBox(10,10))
+
+
+
+   
+</script>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var color = 'red';
+        // // alert(this.color)   //window.color  指向window
+
+        // var myobject = {
+        //     color:'blue',
+        //     sayColor:function(){
+        //         document.write(this.color)
+        //     }
+        // }
+        
+        // myobject.sayColor()
+        // document.write(this.color)
+
+
+        window.color = 'red';
+        // var color = 'red'
+
+        var box = {
+            color:"blue",
+        }
+
+        function sayColor(){
+            document.write(this.color)
+        }
+       
+        sayColor()
+        // box.sayColor = sayColor;  如果没有这一句，下面就会报错
+
+        box.sayColor()   //Uncaught TypeError: box.sayColor is not a function
+
+        
+    </script>
+</body>
+</html>

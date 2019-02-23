@@ -1,0 +1,30 @@
+<script>
+//    function box(name,age){
+//       return name + age;
+//    }
+//    document.write(box.length)
+
+
+// prototype  原型。prototype下面有两个方法apply()和call();
+
+function box(n,m){
+    return n+m;
+}
+
+function sayBox(n,m){
+   return box.apply(this,[n,m])
+        //    thisw作用域表示window 
+        // [] 表示box函数所需要的参数
+}
+
+function sayBox2(n,m){
+   return box.apply(this,arguments)
+        //    thisw作用域表示window 
+        // arguments 表示box函数所需要的参数
+}
+
+
+document.write(sayBox(10,10))
+document.write(sayBox2(10,10))
+
+</script>
